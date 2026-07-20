@@ -24,7 +24,9 @@ jobs:
           python-version: "3.11"
 
       - name: Prepare temporary directory
-        run: sudo mkdir -p /private/tmp
+        run: |
+          sudo mkdir -p /private/tmp
+          sudo chown "$(id -u):$(id -g)" /private/tmp
 
       - name: Run distortion scan, ledger recording, and P/L check
         env:
