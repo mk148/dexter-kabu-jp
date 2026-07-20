@@ -1,0 +1,56 @@
+[
+  {
+    "id": 67,
+    "date": "2026-06-02",
+    "event_date": null,
+    "signal": "C",
+    "code": "6902",
+    "company": "デンソー",
+    "price_at_signal": 1860.0,
+    "buy_thesis": "",
+    "exit_condition": "",
+    "returns": {},
+    "title": "自己株式の公開買付けの結果及び自己株式の取得終了に関するお知らせ",
+    "reason": "自社株買い取得決議",
+    "quarantine_reason": "Signal C over-recording: title is a buyback result/completion notice, not a new buyback authorization.",
+    "financials": {
+      "name": "デンソー",
+      "price": 1860.3,
+      "per": 13.2,
+      "pbr": 0.92,
+      "dividend_yield_pct": 3.96,
+      "week52_high": 2373.0,
+      "week52_high_date": "25/10/31",
+      "drawdown_pct": -21.6,
+      "roe": 7.25,
+      "fcf": 380599.0
+    }
+  },
+  {
+    "id": 68,
+    "date": "2026-06-02",
+    "event_date": null,
+    "signal": "C",
+    "code": "9107",
+    "company": "川崎船",
+    "price_at_signal": 2576.0,
+    "buy_thesis": "",
+    "exit_condition": "",
+    "returns": {},
+    "title": "自己株式立会外買付取引（ToSTNeT-3）による自己株式の取得結果に関するお知らせ",
+    "reason": "自社株買い取得決議",
+    "quarantine_reason": "Signal C over-recording: title is a buyback result notice, not a new buyback authorization.",
+    "financials": {
+      "name": "川崎汽船",
+      "price": 2576.7,
+      "per": 17.1,
+      "pbr": 0.9,
+      "dividend_yield_pct": 4.66,
+      "week52_high": 2964.5,
+      "week52_high_date": "26/03/18",
+      "drawdown_pct": -13.1,
+      "roe": 9.81,
+      "fcf": 84154.0
+    }
+  }
+]
