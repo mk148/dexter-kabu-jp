@@ -41,6 +41,58 @@ jobs:
           set -o pipefail
           python3 src/skills/kasumi-yutai-yield/run_daily.py 2>&1 | tee daily_yutai.log
 
+      - name: Send daily result email
+        if: always()
+        continue-on-error: true
+        env:
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_APP_PASSWORD: ${{ secrets.SMTP_APP_PASSWORD }}
+          JOB_STATUS: ${{ job.status }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import smtplib
+          from email.message import EmailMessage
+          from pathlib import Path
+
+          username = os.environ["SMTP_USERNAME"]
+          password = os.environ["SMTP_APP_PASSWORD"]
+          status = os.environ["JOB_STATUS"]
+          run_url = os.environ["RUN_URL"]
+
+          def read_log(path: str) -> str:
+              file = Path(path)
+              if not file.exists():
+                  return "(ログなし)"
+              return file.read_text(encoding="utf-8", errors="replace")[-12000:]
+
+          body = f"""dexter-kabu-jp daily-check 結果
+
+          ステータス: {status}
+          実行結果: {run_url}
+
+          === 歪みスキャン ===
+          {read_log('daily_distortion.log')}
+
+          === 優待チェック ===
+          {read_log('daily_yutai.log')}
+
+          台帳:
+          https://github.com/{os.environ['GITHUB_REPOSITORY']}/blob/main/src/skills/market-distortion-scan/results/tracker.json
+          https://github.com/{os.environ['GITHUB_REPOSITORY']}/blob/main/src/skills/kasumi-yutai-yield/results/kasumi_yutai_ledger.json
+          """
+
+          message = EmailMessage()
+          message["Subject"] = f"[dexter-kabu-jp] daily-check: {status}"
+          message["From"] = username
+          message["To"] = "daiyum@gmail.com"
+          message.set_content(body)
+
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+              smtp.login(username, password)
+              smtp.send_message(message)
+
       - name: Upload execution logs
         if: always()
         uses: actions/upload-artifact@v4
