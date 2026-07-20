@@ -4,8 +4,8 @@
  * ラジ株ナビMCPから取得した annual.json の fiscalYears データを受け取り、
  * scores.ts の AnalysisInput を組み立てる。
  *
- * DCF乖離率・配当成長率（分割調整済み）・自社株買い検出・Altman Z'' の
- * 計算ロジックは edinet-charts.ts から忠実に移植。
+ * DCF乖離率・配当成長率・自社株買い検出・Altman Z'' を計算。
+ * per-share系 (eps/bps/dividendPerShare) はMCPサーバー側で分割調整済み。
  */
 
 import type { AnalysisInput } from './scores.js';
@@ -108,7 +108,7 @@ function computeDcfGapPercent(
 /**
  * ラジ株ナビMCPの annual.json データから AnalysisInput を構築する。
  *
- * DCF乖離率、配当成長率（分割調整済み）、自社株買い検出、Altman Z'' を自動計算。
+ * DCF乖離率、配当成長率、自社株買い検出、Altman Z'' を自動計算。
  * technical / supplyDemand はデフォルト値を設定し、呼び出し元で上書きすること。
  *
  * @param annualData      ラジ株ナビMCP get_edinet_financial_data の戻り値
@@ -269,28 +269,14 @@ export function buildAnalysisInput(
       ? (latest.dividendPerShare / priceForCalc) * 100
       : 0;
 
-  // 配当成長率（分割調整済み）
-  // @see edinet-charts.ts 274-294行目
-  const sharesHistory = sortedEntries
-    .map(([, fy]) => fy.sharesOutstanding as number | undefined)
+  // 配当成長率
+  // MCPサーバー側 (adjustAnnualForSplits) で dividendPerShare は分割調整済み。
+  const dpsValues = sortedEntries
+    .map(([, fy]) => fy.dividendPerShare as number | undefined)
     .filter((v): v is number => v != null && v > 0);
-  const latestShares = sharesHistory.length > 0 ? sharesHistory[sharesHistory.length - 1] : null;
-  const adjustedDivValues: number[] = [];
-  for (const [, fy] of sortedEntries) {
-    const dps = fy.dividendPerShare;
-    const shares = fy.sharesOutstanding;
-    if (dps == null || dps <= 0) continue;
-    if (shares != null && latestShares != null && shares > 0) {
-      // 分割調整: 当時のDPSを最新株数基準に変換
-      const adjustmentRatio = shares / latestShares;
-      adjustedDivValues.push(dps * adjustmentRatio);
-    } else {
-      adjustedDivValues.push(dps);
-    }
-  }
   const dividendGrowthRate3to5y =
-    (computeCagr(adjustedDivValues, Math.min(5, adjustedDivValues.length - 1)) ??
-      computeCagr(adjustedDivValues, 3)) ??
+    (computeCagr(dpsValues, Math.min(5, dpsValues.length - 1)) ??
+      computeCagr(dpsValues, 3)) ??
     0;
 
   const payoutRatio: number = latest.payoutRatio ?? 0;
@@ -326,6 +312,9 @@ export function buildAnalysisInput(
     }
   } else {
     // フォールバック: 発行済株式数の減少で自社株買いを推定
+    // 株式分割/併合の誤検出を避けるため、減少幅は [50%, 99%] の範囲に限定。
+    // 自社株買いは通常数%〜十数%なので十分カバーされ、併合(>50%減)や
+    // 分割(株数増)は除外される。
     for (
       let i = sortedEntries.length - 1;
       i >= 1 && i >= sortedEntries.length - 3;
@@ -333,7 +322,9 @@ export function buildAnalysisInput(
     ) {
       const currShares = sortedEntries[i][1].sharesOutstanding;
       const prevShares = sortedEntries[i - 1][1].sharesOutstanding;
-      if (currShares != null && prevShares != null && currShares < prevShares * 0.99) {
+      if (currShares == null || prevShares == null || prevShares <= 0) continue;
+      const ratio = currShares / prevShares;
+      if (ratio >= 0.5 && ratio < 0.99) {
         hasBuyback = true;
         if (i === sortedEntries.length - 1) buybackRecency = 'within1y';
         else if (buybackRecency === 'none') buybackRecency = 'within3y';
