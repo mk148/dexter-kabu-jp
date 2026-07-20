@@ -1,0 +1,66 @@
+name: daily-check
+
+on:
+  schedule:
+    # GitHub Actions uses UTC. 19:00 UTC is 04:00 JST on the next day.
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  daily-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Prepare temporary directory
+        run: sudo mkdir -p /private/tmp
+
+      - name: Run distortion scan, ledger recording, and P/L check
+        env:
+          JQUANTS_API_KEY: ${{ secrets.JQUANTS_API_KEY }}
+          RADIKABUNAVI_API_KEY: ${{ secrets.RADIKABUNAVI_API_KEY }}
+        run: |
+          set -o pipefail
+          python3 src/skills/market-distortion-scan/daily_flow.py 2>&1 | tee daily_distortion.log
+
+      - name: Run shareholder-benefit check
+        run: |
+          set -o pipefail
+          python3 src/skills/kasumi-yutai-yield/run_daily.py 2>&1 | tee daily_yutai.log
+
+      - name: Upload execution logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-check-logs-${{ github.run_id }}
+          path: |
+            daily_distortion.log
+            daily_yutai.log
+          retention-days: 30
+
+      - name: Commit updated ledgers and results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            src/skills/market-distortion-scan/results/ \
+            src/skills/kasumi-yutai-yield/results/
+
+          if git diff --cached --quiet; then
+            echo "No result changes to commit"
+          else
+            git commit -m "daily-check: $(date -u +%Y-%m-%d)"
+            git push
+          fi
