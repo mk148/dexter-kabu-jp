@@ -765,5 +765,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-07-22",
+    "code": "9090",
+    "company": "AZ-COM丸和ホールディングス",
+    "total_yield_pct": 5.6,
+    "source_title": "【利回り5.6%】株主優待新設",
+    "source_url": "https://kasumichan.com/2026/07/22/azcom-maruwa/",
+    "matched_text": "【利回り5.6%】株主優待新設",
+    "benefit_content": "■ 株主優待ポイント表 ■ ポイントの使い道・ポイントの繰越し",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-07-22",
+    "code": "",
+    "company": "9月",
+    "total_yield_pct": 5.5,
+    "source_title": "【利回り5.5%】9月優待新設（拡充）です",
+    "source_url": "https://kasumichan.com/2026/07/22/kkp-holdings/",
+    "matched_text": "【利回り5.5%】9月優待新設（拡充）です",
+    "benefit_content": "あわせて読みたい→ 利回り6.7％ 株主優待10万円が到着しました 現行 3月末（年1回） 100株以上：図書カード 1,000円分 変更後 ※2026年9月末より実施 3月末・9月末（年2回） 100株以上：図書カード 1,000円分（年間 2,000円分） 🔥 年間優待額が実",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
