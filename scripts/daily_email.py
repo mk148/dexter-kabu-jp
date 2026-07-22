@@ -13,7 +13,7 @@ import unicodedata
 from email.message import EmailMessage
 from pathlib import Path
 
-DISPLAY_WIDTH = 40
+DISPLAY_WIDTH = 32
 INVALID_COMPANY_NAMES = {"", "株主", "通常", "【"}
 
 
@@ -97,20 +97,27 @@ def warning_lines(*log_paths: str) -> list[str]:
     return warnings[-8:]
 
 
+def _truncate_display(text: str, max_width: int) -> str:
+    result = ""
+    for ch in text:
+        w = 2 if unicodedata.east_asian_width(ch) in {"F", "W", "A"} else 1
+        if display_width(result) + w > max_width:
+            return result + "…"
+        result += ch
+    return result
+
+
 def compact_record(record: dict, kind: str) -> list[str]:
     code = str(record.get("code") or "").strip()
     company = str(record.get("company") or record.get("name") or "").strip()
     lines = [f"{code} {company}"]
     if kind == "distortion":
-        lines.append(
-            f"シグナル {record.get('signal', '-')} / "
-            f"基準値 {float(record.get('price_at_signal') or 0):,.0f}円"
-        )
+        price = float(record.get("price_at_signal") or 0)
+        lines.append(f"S:{record.get('signal', '-')} ¥{price:,.0f}")
     else:
-        lines.append(f"総合利回り {float(record.get('total_yield_pct') or 0):.2f}%")
-        benefit = str(record.get("benefit_content") or "").strip()
-        if benefit:
-            lines.append(f"優待 {benefit}")
+        yld = float(record.get("total_yield_pct") or 0)
+        benefit = _truncate_display(str(record.get("benefit_content") or "").strip(), 16)
+        lines.append(f"{yld:.1f}%" + (f" {benefit}" if benefit else ""))
     return lines
 
 
@@ -127,33 +134,32 @@ def build_body(
     missing = missing_identity(distortion_after) + missing_identity(yutai_after)
 
     raw_lines = [
-        "株チェック 日次結果",
+        "日次チェック",
         "",
-        f"状態: {status}",
-        f"歪み台帳: 全{len(distortion_after)}件 / 新規{len(distortion_new)}件",
-        f"優待台帳: 全{len(yutai_after)}件 / 新規{len(yutai_new)}件",
-        f"コード・会社名の欠損: {len(missing)}件",
-        "",
-        "【歪み 新規】",
+        status,
+        f"歪み {len(distortion_after)}件 新{len(distortion_new)}"
+        f" / 優待 {len(yutai_after)}件 新{len(yutai_new)}",
     ]
+    if missing:
+        raw_lines.append(f"欠損 {len(missing)}件")
+
+    raw_lines.extend(["", "▼歪み新規"])
     if distortion_new:
         for record in distortion_new:
             raw_lines.extend(compact_record(record, "distortion"))
-            raw_lines.append("")
     else:
-        raw_lines.append("新規なし")
+        raw_lines.append("なし")
 
-    raw_lines.extend(["", "【優待 新規】"])
+    raw_lines.extend(["", "▼優待新規"])
     if yutai_new:
         for record in yutai_new:
             raw_lines.extend(compact_record(record, "yutai"))
-            raw_lines.append("")
     else:
-        raw_lines.append("新規なし")
+        raw_lines.append("なし")
 
-    raw_lines.extend(["", "【警告】"])
-    raw_lines.extend(warnings or ["なし"])
-    raw_lines.extend(["", "詳細はメール下部のリンクから確認できます。"])
+    if warnings:
+        raw_lines.extend(["", "▼警告"])
+        raw_lines.extend(_truncate_display(w, DISPLAY_WIDTH) for w in warnings)
 
     wrapped: list[str] = []
     for line in raw_lines:

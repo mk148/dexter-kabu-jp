@@ -26,13 +26,13 @@ class DailyEmailTest(unittest.TestCase):
 
         self.assertIn("1234", body)
         self.assertIn("367A", body)
-        self.assertIn("コード・会社名の欠損: 0件", body)
+        self.assertNotIn("欠損", body)
         self.assertTrue(all(display_width(line) <= DISPLAY_WIDTH for line in body.splitlines()))
 
     def test_missing_identity_is_reported(self) -> None:
         invalid = [{"code": "", "company": ""}, {"code": "254A", "company": "通常"}]
         body = build_body("failure", [], invalid, [], [], ["ERROR sample"])
-        self.assertIn("コード・会社名の欠損: 2件", body)
+        self.assertIn("欠損 2件", body)
         self.assertIn("ERROR sample", body)
 
 
