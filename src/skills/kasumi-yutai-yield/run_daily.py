@@ -30,6 +30,8 @@ RESULTS_DIR = SKILL_DIR / "results"
 LEDGER_FILE = RESULTS_DIR / "kasumi_yutai_ledger.json"
 KASUMI_BASE_URL = "https://kasumichan.com/"
 ZAI_CATEGORY_URL = "https://diamond.jp/zai/category/kabunushiyutai"
+STOCK_CODE_PATTERN = r"(?:[1-9]\d{3}|[1-9]\d{2}[A-Z])"
+INVALID_COMPANY_NAMES = {"", "株主", "通常", "【"}
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -153,8 +155,8 @@ def company_from_title(title: str) -> str:
 def extract_code(text: str, title: str) -> str:
     source = f"{title}\n{text}"
     patterns = [
-        r"(?:証券コード|銘柄コード|コード)[:：\s]*([1-9]\d{3})",
-        r"[（(]([1-9]\d{3})[）)]",
+        rf"(?:証券コード|銘柄コード|コード)[:：\s]*({STOCK_CODE_PATTERN})",
+        rf"[（(]({STOCK_CODE_PATTERN})[）)]",
     ]
     for pattern in patterns:
         match = re.search(pattern, source)
@@ -296,7 +298,7 @@ def collect_zai_candidates(min_yield: float, scan_date: str) -> list[Candidate]:
         return []
 
     candidates: list[Candidate] = []
-    company_pattern = re.compile(r"(?is)◆\s*([^<（(]+?)\s*[（(]([1-9]\d{3})[）)]")
+    company_pattern = re.compile(rf"(?is)◆\s*([^<（(]+?)\s*[（(]({STOCK_CODE_PATTERN})[）)]")
     matches = list(company_pattern.finditer(markup))
 
     for idx, match in enumerate(matches):
@@ -368,13 +370,48 @@ def dedupe_key(record: dict) -> tuple[str, str]:
     return (str(record.get("code", "")), str(record.get("source_url", "")))
 
 
+def has_complete_identity(record: dict) -> bool:
+    code = str(record.get("code") or "").strip()
+    company = str(record.get("company") or "").strip()
+    return bool(code and company not in INVALID_COMPANY_NAMES)
+
+
 def merge_candidates_into_ledger(ledger: list[dict], candidates: list[Candidate]) -> tuple[list[dict], int, int]:
+    # Some article layouts omit the code/name on later fetches. Reuse the
+    # complete identity already recorded for the same source before deduping.
+    identities_by_url: dict[str, list[tuple[str, str]]] = {}
+    for record in ledger:
+        url = str(record.get("source_url") or "").strip()
+        code = str(record.get("code") or "").strip()
+        company = str(record.get("company") or "").strip()
+        if url and code and company:
+            identity = (code, company)
+            identities_by_url.setdefault(url, [])
+            if identity not in identities_by_url[url]:
+                identities_by_url[url].append(identity)
     by_key = {dedupe_key(record): record for record in ledger}
     new_count = 0
     updated_count = 0
 
     for candidate in candidates:
         record = asdict(candidate)
+        code = str(record.get("code") or "").strip()
+        identities = identities_by_url.get(record["source_url"], [])
+        matching_identity = next((item for item in identities if item[0] == code), None)
+        if matching_identity is None and not code and len(identities) == 1:
+            matching_identity = identities[0]
+        if matching_identity:
+            # The previously verified identity is more reliable than a title fragment.
+            record["code"], record["company"] = matching_identity
+        else:
+            record["code"] = code
+            record["company"] = str(record.get("company") or "").strip()
+        if not has_complete_identity(record):
+            print(
+                f"[WARN] コードまたは会社名を特定できないため記録対象外: {record['source_url']}",
+                file=sys.stderr,
+            )
+            continue
         key = dedupe_key(record)
         existing = by_key.get(key)
         if existing is None:
@@ -423,9 +460,12 @@ def run(pages: int, min_yield: float, dry_run: bool, as_json: bool) -> int:
 
     ledger = load_ledger()
     ledger, new_count, updated_count = merge_candidates_into_ledger(ledger, candidates)
-    new_records = [asdict(c) for c in candidates if False]
+    incomplete_count = sum(not has_complete_identity(record) for record in ledger)
+    if incomplete_count:
+        ledger = [record for record in ledger if has_complete_identity(record)]
+        print(f"[WARN] コードまたは会社名がない既存行を{incomplete_count}件除外", file=sys.stderr)
 
-    if not dry_run and (new_count or updated_count):
+    if not dry_run and (new_count or updated_count or incomplete_count):
         save_ledger(ledger)
 
     if as_json:
@@ -437,6 +477,7 @@ def run(pages: int, min_yield: float, dry_run: bool, as_json: bool) -> int:
             "candidates": [asdict(c) for c in candidates],
             "new_records_count": new_count,
             "updated_records_count": updated_count,
+            "incomplete_records_removed": incomplete_count,
             "ledger": ledger,
             "dry_run": dry_run,
             "ledger_file": str(LEDGER_FILE),
@@ -447,7 +488,8 @@ def run(pages: int, min_yield: float, dry_run: bool, as_json: bool) -> int:
     print(
         f"kasumichan記事確認: {kasumi_checked}件 / "
         f"Zai候補行: {len(zai_candidates)}件 / "
-        f"候補: {len(candidates)}件 / 新規記録: {new_count}件 / 内容補完: {updated_count}件"
+        f"候補: {len(candidates)}件 / 新規記録: {new_count}件 / "
+        f"内容補完: {updated_count}件 / 欠損除外: {incomplete_count}件"
     )
 
     if dry_run:
