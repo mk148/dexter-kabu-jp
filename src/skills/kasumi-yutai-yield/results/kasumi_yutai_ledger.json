@@ -700,5 +700,57 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-07-23",
+    "code": "4997",
+    "company": "日本農薬",
+    "total_yield_pct": 5.3,
+    "source_title": "【利回り5.3%】日本農薬（4997）株主優待新設",
+    "source_url": "https://kasumichan.com/2026/07/23/nippon-noyaku/",
+    "matched_text": "【利回り5.3%】日本農薬（4997）株主優待新設",
+    "benefit_content": "100株以上で おこめ券 4枚（1,760円相当） 生活防衛にも役立つ「おこめ券」は、個人投資家から特に人気が高い優待品の一つです！",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-07-23",
+    "code": "4825",
+    "company": "ウェザーニューズ",
+    "total_yield_pct": 6.9,
+    "source_title": "【利回り6.9%】株主優待拡充",
+    "source_url": "https://kasumichan.com/2026/07/23/weathernews/",
+    "matched_text": "【利回り6.9%】株主優待拡充",
+    "benefit_content": "【利回り6.9%】株主優待拡充",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-07-23",
+    "code": "1518",
+    "company": "三井松島ホールディングス",
+    "total_yield_pct": 8.3,
+    "source_title": "【利回り8.3%】56円増配する株主優待銘柄",
+    "source_url": "https://kasumichan.com/2026/07/23/mitsui-matsushima/",
+    "matched_text": "【利回り8.3%】56円増配する株主優待銘柄",
+    "benefit_content": "1株以上対象） 株価データ（2026年7月22日現在） 配当予想の修正（大幅増配！）",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-07-23",
+    "code": "367A",
+    "company": "イダルジュエリーを展開する プリモグローバルホールディングス",
+    "total_yield_pct": 5.8,
+    "source_title": "【利回り5.8%】株主優待拡充【7月15日】",
+    "source_url": "https://kasumichan.com/2026/07/15/primoglobal/",
+    "matched_text": "【利回り5.8%】株主優待拡充【7月15日】",
+    "benefit_content": "（8月末・年1回）※2026年8月末から変更 優待券は、同社が展開するブライダルリング専門店 「I-PRIMO（アイプリモ）」 や 「LAZARE DIAMOND（ラザール ダイヤモンド）」 の国内店舗で利用可能です。 保有株数 現行の優待内容 変更後の優待内容（2026年8月末",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
