@@ -778,5 +778,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-07-29",
+    "code": "4290",
+    "company": "サポートの代行を手がける プレステージ・インターナショナル",
+    "total_yield_pct": 9.1,
+    "source_title": "【利回り9.1%】通常優待+9月末に記念優待実施",
+    "source_url": "https://kasumichan.com/2026/07/28/prestige/",
+    "matched_text": "【利回り9.1%】通常優待+9月末に記念優待実施",
+    "benefit_content": "（QUOカード） 100株 〜 199株 500円分 200株 〜 299株 1,000円分 300株 〜 499株 1,500円分 500株以上 2,000円分",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-07-29",
+    "code": "545A",
+    "company": "トランヴィア",
+    "total_yield_pct": 8.44,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "トランヴィア（545A） 配当＋優待利回り 8.44% / 配当利回り 4.83% / 確定月 9月末",
+    "benefit_content": "100株以上で3000円分のQUOカード（うち1000円分は今回のみの記念優待）。今回から株主優待を新設",
+    "status": "watch",
+    "source": "diamond.jp/zai",
+    "holding_status": ""
   }
 ]
