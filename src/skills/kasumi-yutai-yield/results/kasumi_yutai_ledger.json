@@ -830,5 +830,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-07-31",
+    "code": "8887",
+    "company": "シーラホールディングス",
+    "total_yield_pct": 11.7,
+    "source_title": "【利回り11.7%】株主優待拡充です",
+    "source_url": "https://kasumichan.com/2026/07/31/sheela-holdings/",
+    "matched_text": "【利回り11.7%】株主優待拡充です",
+    "benefit_content": "一覧 人気記事→ 【利回り9.4%】1,040円増配する株主優待銘柄 500株以上から長期保有優待（デジタルギフト）が付きますが、1,000株からの上乗せ額が特に手厚くなっています。 保有株式数 現行 (利回りくんコイン) 1年継続 3年継続 5年継続 200株～400株 1,0",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-07-31",
+    "code": "7241",
+    "company": "フタバ産業",
+    "total_yield_pct": 6.2,
+    "source_title": "利回り5.2%（長期6.2%）株主優待新設",
+    "source_url": "https://kasumichan.com/2026/07/31/futaba-sangyo/",
+    "matched_text": "利回り5.2%（長期6.2%）株主優待新設",
+    "benefit_content": "QUOカード（1,000円〜3,000円分） 初年度限定特典 2026年9月末は継続保有期間に関わらず、100株以上保有の全株主に一律1,000円分を進呈！ ■ 2年目以降（2027年9月以降）の進呈基準 ※2年目以降は「1年以上継続保有」が必須条件となります。 保有株式数 1年",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
