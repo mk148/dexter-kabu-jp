@@ -895,5 +895,57 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-06",
+    "code": "300A",
+    "company": "IMC",
+    "total_yield_pct": 6.7,
+    "source_title": "【最大利回り6.7％】IMC（300A）株主優待新設",
+    "source_url": "https://kasumichan.com/2026/08/06/imc/",
+    "matched_text": "【最大利回り6.7％】IMC（300A）株主優待新設",
+    "benefit_content": "人気記事→ 花王 株主優待新設 対象： 毎年9月末日時点で2単元（200株）以上保有の株主 内容： 「MIC プレミアム優待倶楽部」にて商品やWILLsCoin等と交換可能なポイントを進呈（1ポイント≒1円）共通株主優待コイン｢WILLsCoin｣に交換できます。 保有株式数 優",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-06",
+    "code": "7075",
+    "company": "QLSホールディングス",
+    "total_yield_pct": 30.0,
+    "source_title": "【利回り4.7%】デジタルギフト優待30%拡充",
+    "source_url": "https://kasumichan.com/2026/08/06/qls-holdings/",
+    "matched_text": "【利回り4.7%】デジタルギフト優待30%拡充",
+    "benefit_content": "が従来の30%増額！ 年間最大20,000円分 → 26,000円分 にパワーアップ 対象時期： 2026年9月30日を基準日とする中間優待から適用 1Q決算も絶好調： 売上高+16.1%、営業利益+57.5%の幅拡大 配当予想： 前期10円 → 当期11円へ増配予想！",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-06",
+    "code": "3964",
+    "company": "オークネット",
+    "total_yield_pct": 7.1,
+    "source_title": "【利回り7.1％】オークネット大幅増配&特別優待実施",
+    "source_url": "https://kasumichan.com/2026/08/05/aucnet/",
+    "matched_text": "【利回り7.1％】オークネット大幅増配&特別優待実施",
+    "benefit_content": "100株以上保有の株主を対象に、1pt≒1円相当の「オークネット・プレミアム優待倶楽部」ポイントを贈呈",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-06",
+    "code": "3987",
+    "company": "IoTインテグレーション事業を展開している エコモット",
+    "total_yield_pct": 7.8,
+    "source_title": "【利回り7.8％】8月株主優待改悪です",
+    "source_url": "https://kasumichan.com/2026/08/04/ecomott/",
+    "matched_text": "【利回り7.8％】8月株主優待改悪です",
+    "benefit_content": "【利回り7.8％】8月株主優待改悪です",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
