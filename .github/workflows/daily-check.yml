@@ -2,8 +2,8 @@ name: daily-check
 
 on:
   schedule:
-    # GitHub Actions uses UTC. 06:00 UTC is 15:00 JST.
-    - cron: "0 6 * * *"
+    # GitHub Actions uses UTC. 05:30 UTC is 14:30 JST.
+    - cron: "30 5 * * *"
   workflow_dispatch:
 
 permissions:
