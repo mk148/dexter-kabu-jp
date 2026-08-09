@@ -23,6 +23,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install Python dependencies
+        run: pip install requests beautifulsoup4
+
       - name: Prepare temporary directory
         run: |
           sudo mkdir -p /private/tmp

@@ -16,7 +16,7 @@ from pathlib import Path
 SKILL_DIR = Path(__file__).parent
 LEDGER_FILE = SKILL_DIR / "results" / "kasumi_yutai_ledger.json"
 MARKET_SCAN_DIR = SKILL_DIR.parent / "market-distortion-scan"
-YIELD_SCRIPT = Path.home() / ".codex/skills/stock-yield/scripts/fetch_yield.py"
+YIELD_SCRIPT = SKILL_DIR / "scripts" / "fetch_yield.py"
 MIN_TOTAL_YIELD = 5.0
 SOURCE = "market-distortion-signal"
 
