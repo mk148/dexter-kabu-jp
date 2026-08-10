@@ -1155,5 +1155,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-10",
+    "code": "4290",
+    "company": "プレステージ・インターナショナル",
+    "total_yield_pct": 9.0,
+    "source_title": "最近購入した7万円で買える利回り9%株主優待銘柄",
+    "source_url": "https://kasumichan.com/2026/08/10/prestige/",
+    "matched_text": "最近購入した7万円で買える利回り9%株主優待銘柄",
+    "benefit_content": "（QUOカード） 100株 〜 199株 500円分 200株 〜 299株 1,000円分 300株 〜 499株 1,500円分 500株以上 2,000円分",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-10",
+    "code": "4635",
+    "company": "保有中の東京インキ",
+    "total_yield_pct": 5.1,
+    "source_title": "【含み益30万円】30円増配！利回り5.1％にアップした株主優待銘柄",
+    "source_url": "https://kasumichan.com/2026/08/09/tokyo-ink/",
+    "matched_text": "【含み益30万円】30円増配！利回り5.1％にアップした株主優待銘柄",
+    "benefit_content": "100株以上の保有で選べるギフト（QUOカード、電子マネー、寄付）が進呈されます",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
