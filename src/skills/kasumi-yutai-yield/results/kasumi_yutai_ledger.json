@@ -1207,5 +1207,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-15",
+    "code": "8041",
+    "company": "東証スタンダード上場の OUGホールディングス",
+    "total_yield_pct": 5.4,
+    "source_title": "利回り4.6％（長期5.4％）株主優待拡充です",
+    "source_url": "https://kasumichan.com/2026/08/15/oug-holdings/",
+    "matched_text": "利回り4.6％（長期5.4％）株主優待拡充です",
+    "benefit_content": "500株以上 3年未満 5,000円相当 7,000円相当（+2,000円） 3年以上※ 10,000円相当 15,000円相当（+5,000円） 権利確定日： 毎年9月30日 贈呈時期： 毎年12月に贈呈 ※3年以上継続保有の株主は、優待品に代えて「漁船海難遺児育英会」への寄付",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
