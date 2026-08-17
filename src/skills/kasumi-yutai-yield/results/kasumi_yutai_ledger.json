@@ -1233,5 +1233,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-17",
+    "code": "9166",
+    "company": "GENDA",
+    "total_yield_pct": 9.2,
+    "source_title": "【利回り9.2％】 株主優待拡充",
+    "source_url": "https://kasumichan.com/2026/08/17/genda/",
+    "matched_text": "【利回り9.2％】 株主優待拡充",
+    "benefit_content": "はこちら 保有株式数 変更前（年間） 変更後（1.5倍・年間） 100株〜299株 年2回 / 計 4,000 pt 年2回 / 計 6,000 pt 300株〜499株 年2回 / 計 12,000 pt 年2回 / 計 18,000 pt 500株以上 年2回 / 計 20,",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-17",
+    "code": "205A",
+    "company": "ロゴスホールディングス",
+    "total_yield_pct": 5.2,
+    "source_title": "【配当利回り5.2％】デジタルギフトがもらえる株主優待銘柄",
+    "source_url": "https://kasumichan.com/2026/08/17/logos-holdings/",
+    "matched_text": "【配当利回り5.2％】デジタルギフトがもらえる株主優待銘柄",
+    "benefit_content": "人気記事→ 利回り4.6％（長期5.4％）株主優待拡充です ロゴスホールディングスの株主優待は、AmazonギフトカードやPayPayポイント、楽天ポイントなどに交換可能な**「デジタルギフト（シェア型）」**です。 【権利確定月】 5月（年1回） ▼ 2027年5月権利分の優待",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
