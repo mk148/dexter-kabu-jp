@@ -1259,5 +1259,44 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-19",
+    "code": "2792",
+    "company": "ハニーズホールディングス",
+    "total_yield_pct": 5.9,
+    "source_title": "【最大利回り5.9％】女性におすすめ株主優待",
+    "source_url": "https://kasumichan.com/2026/08/19/honeys/",
+    "matched_text": "【最大利回り5.9％】女性におすすめ株主優待",
+    "benefit_content": "（商品引換券） 100株以上 3,000円分 （500円券 × 6枚） 300株以上 5,000円分 （500円券 × 10枚） 500株以上 7,000円分 （500円券 × 14枚） 1,000株以上 10,000円分 （500円券 × 20枚） 💡 継続保有条件の注意点 毎",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-19",
+    "code": "3034",
+    "company": "ハイパ",
+    "total_yield_pct": 7.3,
+    "source_title": "【利回り7.3％】ハイパー（3034）デジタルギフト株主優待再開です",
+    "source_url": "https://kasumichan.com/2026/08/18/haipa/",
+    "matched_text": "【利回り7.3％】ハイパー（3034）デジタルギフト株主優待再開です",
+    "benefit_content": "保有株式数にかかわらず年1回、一律 デジタルギフト 5,000円分 を贈呈 初回基準日 2026年12月31日（年1回） 贈呈時期 毎年3月下旬頃（初回は2027年3月下旬頃を予定）",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-19",
+    "code": "7085",
+    "company": "カーブスホールディングス",
+    "total_yield_pct": 6.2,
+    "source_title": "利回り5.2%（長期6.2%）おすすめ8月株主優待",
+    "source_url": "https://kasumichan.com/2026/08/18/yutai-kakuchou-kinen-5-89percent/",
+    "matched_text": "利回り5.2%（長期6.2%）おすすめ8月株主優待",
+    "benefit_content": "（選択制） 100株以上 1年未満 1,000円相当 1年以上 1,500円相当 3年以上 2,000円相当 500株以上 1年未満 2,000円相当 1年以上 3,000円相当 3年以上 5,000円相当 ※優待品は「QUOカード」「電子マネー等」「カーブス定期便割引」から1品",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
