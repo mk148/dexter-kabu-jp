@@ -1311,5 +1311,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-22",
+    "code": "8783",
+    "company": "abc",
+    "total_yield_pct": 151.0,
+    "source_title": "【利回り151％】8,000円で買える株主優待一部廃止です",
+    "source_url": "https://kasumichan.com/2026/08/21/abc/",
+    "matched_text": "【利回り151％】8,000円で買える株主優待一部廃止です",
+    "benefit_content": "子会社が運営する店舗にて「1ポイント＝1円」として利用できる株主優待ポイントを贈呈（※利用にはスマホアプリのインストールが必要です）。 abc優待利用店舗一覧はこちら ■ 贈呈ポイント数一覧（保有期間別） 保有株式数 初年度 (1年未満) 1年以上 (1.5倍) 2年以上 (1.",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
