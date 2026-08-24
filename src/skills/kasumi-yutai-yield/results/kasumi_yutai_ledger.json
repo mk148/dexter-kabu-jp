@@ -1324,5 +1324,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-24",
+    "code": "7313",
+    "company": "テイ・エステック",
+    "total_yield_pct": 6.5,
+    "source_title": "【配当利回り4.9％】長期6.5％の株主優待銘柄",
+    "source_url": "https://kasumichan.com/2026/08/24/march-yutai-6percent-longterm/",
+    "matched_text": "【配当利回り4.9％】長期6.5％の株主優待銘柄",
+    "benefit_content": "（3月末・年1回） 食品ギフト交換ポイント 保有株式数 優待内容 200株 3,000円相当 (1年未満) 4,000円相当 (1年以上) 5,000円相当 (3年以上) 6,000円相当 (5年以上) 600株 7,000円相当 (1年未満) 9,000円相当 (1年以上) 1",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
