@@ -1350,5 +1350,44 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-08-27",
+    "code": "9251",
+    "company": "AB＆Company",
+    "total_yield_pct": 8.49,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "AB＆Company（9251） 配当＋優待利回り 8.49% / 配当利回り 3.92% / 確定月 10月末",
+    "benefit_content": "100株で7000円分の自社オンラインストア割引券（1万円以上の購入で利用可）、200株で1万円分、500株で2万円分、600株以上で2万円分の自社オンラインストア優待券。600株以上の場合は2万6000円相当のオリジナルドライヤーも選択可",
+    "status": "watch",
+    "source": "diamond.jp/zai",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-27",
+    "code": "6194",
+    "company": "アトラエ",
+    "total_yield_pct": 6.4,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "アトラエ（6194） 配当＋優待利回り 6.40% / 配当利回り 4.15% / 確定月 10月末",
+    "benefit_content": "商品や電子マネーと交換可能なポイントを、500株で1万ポイント、700株で2万ポイント、1000株で3万ポイント、1500株で4万8000ポイント、2000株以上で6万5000ポイント（1ポイント＝1円相当、プレミアム優待倶楽部）。今回から株主優待を新設",
+    "status": "watch",
+    "source": "diamond.jp/zai",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-08-27",
+    "code": "9603",
+    "company": "エイチ・アイ・エス",
+    "total_yield_pct": 6.36,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "エイチ・アイ・エス（9603） 配当＋優待利回り 6.36% / 配当利回り 2.12% / 確定月 10月末、4月末",
+    "benefit_content": "自社グループで利用可能な株主優待券を、100株で1000円分、500株で5000円分、1000株で1万円分、3000株で3万円分、5000株以上で5万円分。他に、今回のみ100株以上で3000円分の特別優待。株主優待利回りは通常優待＋特別優待で計算。長期保有優遇制度あり。今回から",
+    "status": "watch",
+    "source": "diamond.jp/zai",
+    "holding_status": ""
   }
 ]
