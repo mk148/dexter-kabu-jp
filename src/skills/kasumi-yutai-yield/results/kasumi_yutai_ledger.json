@@ -1415,5 +1415,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-09-01",
+    "code": "8518",
+    "company": "日本アジア投資",
+    "total_yield_pct": 7.2,
+    "source_title": "【利回り7.2%】株主優待新設",
+    "source_url": "https://kasumichan.com/2026/09/01/nihon-asia-toshi/",
+    "matched_text": "【利回り7.2%】株主優待新設",
+    "benefit_content": "QUOカード10,000円が廃止です 2026.08.13 3月株主優待廃止です 2026.08.27 かすみちゃん",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
