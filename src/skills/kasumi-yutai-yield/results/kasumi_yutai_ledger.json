@@ -1428,5 +1428,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-09-02",
+    "code": "3083",
+    "company": "スターシーズ",
+    "total_yield_pct": 10.7,
+    "source_title": "【利回り10.7％】QUOカードが年間6万円もらえる株主優待新設",
+    "source_url": "https://kasumichan.com/2026/09/02/starseeds/",
+    "matched_text": "【利回り10.7％】QUOカードが年間6万円もらえる株主優待新設",
+    "benefit_content": "（QUOカード） 2.",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-09-02",
+    "code": "4839",
+    "company": "WOWOW",
+    "total_yield_pct": 6.9,
+    "source_title": "【利回り6.9％】株主優待拡充",
+    "source_url": "https://kasumichan.com/2026/09/02/wowow/",
+    "matched_text": "【利回り6.9％】株主優待拡充",
+    "benefit_content": "100株以上 （1年以上継続保有） 下記より1つ選択： 1. 視聴優待3カ月無料 2. Amazonギフトカード 2,000円分 3. 日本赤十字社への寄付 2,000円分 4. WOWOW特製QUOカード 2,000円分 ① 下記より1つ選択： 1. 視聴優待3カ月無料 2. ",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
