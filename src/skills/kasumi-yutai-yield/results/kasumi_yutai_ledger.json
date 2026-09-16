@@ -1545,5 +1545,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-09-16",
+    "code": "1430",
+    "company": "ファーストコーポレーション",
+    "total_yield_pct": 5.7,
+    "source_title": "【利回り5.7％】QUOカード優待拡充",
+    "source_url": "https://kasumichan.com/2026/09/16/first-corporation/",
+    "matched_text": "【利回り5.7％】QUOカード優待拡充",
+    "benefit_content": "新着記事→ 利回り6％ 株主優待新設です 従来の制度に比べ、より小口の投資単位（100株以上）から、かつ 継続保有期間の条件なし（1年未満）で利用できる100株区分が新たに導入 されました。 【変更後（2026年11月末日基準日より適用）】 対象株式数 継続保有 1年未満 新設 ",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
