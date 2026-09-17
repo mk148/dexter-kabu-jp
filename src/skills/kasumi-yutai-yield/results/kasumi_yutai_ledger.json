@@ -1558,5 +1558,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-09-17",
+    "code": "8104",
+    "company": "クワザワホールディングス",
+    "total_yield_pct": 5.6,
+    "source_title": "【利回り5.6%】株主優待改悪です",
+    "source_url": "https://kasumichan.com/2026/09/17/kuwazawa/",
+    "matched_text": "【利回り5.6%】株主優待改悪です",
+    "benefit_content": "継続保有期間 保有株式数 QUOカード贈呈額 指定なし （単年度保有でOK） 100株以上 1,000円分 500株以上 2,000円分 1,000株以上 3,000円分 【変更後の優待内容（2027年3月期〜）】 継続保有期間 保有株式数 QUOカード贈呈額 1年未満 各保有株",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
