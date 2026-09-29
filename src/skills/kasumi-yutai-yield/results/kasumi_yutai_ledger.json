@@ -1675,5 +1675,18 @@
     "status": "watch",
     "source": "diamond.jp/zai",
     "holding_status": ""
+  },
+  {
+    "date": "2026-09-29",
+    "code": "4331",
+    "company": "テイクアンドギヴ・ニーズ",
+    "total_yield_pct": 6.3,
+    "source_title": "【利回り6.3％】株主優待新設",
+    "source_url": "https://kasumichan.com/2026/09/29/takeandgivesneeds/",
+    "matched_text": "【利回り6.3％】株主優待新設",
+    "benefit_content": "ポイント表】 2. 業績予想（2026年〜2028年） 3. 株価データ（2026年9月29日現在） 1. 株主優待制度の概要",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
