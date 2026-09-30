@@ -1688,5 +1688,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-09-30",
+    "code": "3242",
+    "company": "アーバネットコーポレーション",
+    "total_yield_pct": 6.3,
+    "source_title": "【利回り6.3％】QUOカードが年5,000円もらえる株主優待銘柄",
+    "source_url": "https://kasumichan.com/2026/09/30/urbanet-quo-yutai-57/",
+    "matched_text": "【利回り6.3％】QUOカードが年5,000円もらえる株主優待銘柄",
+    "benefit_content": "（QUOカード） 500株以上 2,500円分 1000株以上 5,000円分 QUOカードはコンビニやマツモトキヨシで使うことが多いです。有効期限がなくて助かります",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
