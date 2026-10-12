@@ -1766,5 +1766,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-10-12",
+    "code": "3010",
+    "company": "銘柄 \n\n \n\n\n \n \n ポラリス・ホールディングス",
+    "total_yield_pct": 7.4,
+    "source_title": "【利回り7.4％】10万円で買える株主優待銘柄",
+    "source_url": "https://kasumichan.com/2026/10/12/polaris/",
+    "matched_text": "【利回り7.4％】10万円で買える株主優待銘柄",
+    "benefit_content": "（宿泊割引券） 500株以上 2,000円相当 1,000株以上 4,000円相当 2,000株以上 6,000円相当 4,000株以上 8,000円相当 5,000株以上 10,000円相当 6,000株以上 12,000円相当 10,000株以上 40,000円相当 50,0",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
