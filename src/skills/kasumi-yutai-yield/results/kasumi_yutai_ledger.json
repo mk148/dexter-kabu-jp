@@ -1805,5 +1805,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-10-16",
+    "code": "5527",
+    "company": "株式会社property technologies",
+    "total_yield_pct": 6.1,
+    "source_title": "【利回り6.1％】優待拡充&増配",
+    "source_url": "https://kasumichan.com/2026/10/16/property/",
+    "matched_text": "【利回り6.1％】優待拡充&増配",
+    "benefit_content": "がより利便性の高い優待へ拡充されます。 保有株式数 変更前 変更後 300株（3単元）以上 QUOカード 5,000円分 電子ギフト 6,000円分 ※適用時期：2026年11月末日現在の株主名簿に記載または記録された株主様より実施されます。 3.",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-10-16",
+    "code": "7360",
+    "company": "オンデック",
+    "total_yield_pct": 8.1,
+    "source_title": "【利回り8.1％】株主優待新設",
+    "source_url": "https://kasumichan.com/2026/10/16/ondek/",
+    "matched_text": "【利回り8.1％】株主優待新設",
+    "benefit_content": "1,000株以上 50,000円相当 ※電子ギフトは1ポイント1円相当の各種電子マネーやポイントと交換が可能です",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
