@@ -1857,5 +1857,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-10-20",
+    "code": "7578",
+    "company": "ニチリョク",
+    "total_yield_pct": 15.8,
+    "source_title": "【利回り15.8％】株主優待新設",
+    "source_url": "https://kasumichan.com/2026/10/20/nichiryoku/",
+    "matched_text": "【利回り15.8％】株主優待新設",
+    "benefit_content": "（1,000株保有）： 当社商品券 10,000円分 優待利回り： 15.87%",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-10-20",
+    "code": "1814",
+    "company": "一角である 大末建設",
+    "total_yield_pct": 5.6,
+    "source_title": "【6年連続増配】配当利回り5.6％にアップした銘柄",
+    "source_url": "https://kasumichan.com/2026/10/20/daimatsu-kensetsu/",
+    "matched_text": "【6年連続増配】配当利回り5.6％にアップした銘柄",
+    "benefit_content": "【6年連続増配】配当利回り5.6％にアップした銘柄",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
