@@ -1883,5 +1883,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-10-22",
+    "code": "5949",
+    "company": "ユニプレス",
+    "total_yield_pct": 6.7,
+    "source_title": "【利回り6.7％】ユニプレス株主優待変更",
+    "source_url": "https://kasumichan.com/2026/10/22/unipres/",
+    "matched_text": "【利回り6.7％】ユニプレス株主優待変更",
+    "benefit_content": "100株以上 300株未満 0 pt 1,500 pt (旧 1,000pt) 2,000 pt 3,000 pt 左記に加え、 長期保有特典（抽選） ※2027年度は工場見学へご案内予定 300株以上 500株未満 0 pt (旧1,000pt) 2,500 pt (旧 2,0",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-10-22",
+    "code": "3612",
+    "company": "ワールド",
+    "total_yield_pct": 5.9,
+    "source_title": "【総合利回り5.9％】株主優待到着",
+    "source_url": "https://kasumichan.com/2026/10/22/world-2/",
+    "matched_text": "【総合利回り5.9％】株主優待到着",
+    "benefit_content": "（半年以上継続保有が必要） 自社グループの直営店舗および公式ECサイトで使える株主優待券 権利確定月： 2月・8月（年2回） 進呈時期： 年2回（発送基準月：5月・11月頃） 条件： 6ヵ月以上継続保有の株主が対象（3年以上保有で進呈額が2倍） 保有株式数 6ヵ月以上保有（1回あ",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
