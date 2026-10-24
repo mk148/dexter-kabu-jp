@@ -1909,5 +1909,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-10-24",
+    "code": "9979",
+    "company": "外食優待株として人気の 大庄",
+    "total_yield_pct": 7.3,
+    "source_title": "利回り7.3%の株主優待を使ってきました",
+    "source_url": "https://kasumichan.com/2026/10/24/daisho-yutai-lunch/",
+    "matched_text": "利回り7.3%の株主優待を使ってきました",
+    "benefit_content": "100株以上 優待飲食券(500円券) 6枚 3,000円分 500株以上 12枚 6,000円分 1,000株以上 24枚 12,000円分",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
