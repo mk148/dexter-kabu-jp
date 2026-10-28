@@ -1671,7 +1671,7 @@
     "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
     "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
     "matched_text": "property technologies（5527） 配当＋優待利回り 5.60% / 配当利回り 3.36% / 確定月 11月末",
-    "benefit_content": "300株以上で5000円分のQUOカード",
+    "benefit_content": "300株以上で6000円分のデジタルギフト。今回から株主優待内容を拡充",
     "status": "watch",
     "source": "diamond.jp/zai",
     "holding_status": ""
@@ -1960,6 +1960,45 @@
     "benefit_content": "新着記事→ 利回り5.5％ おすすめ株主優待 株式上場15周年を記念し、2027年1月31日時点の株主名簿に記載または記録された1,000株（10単元）以上を保有する株主を対象に、株主優待ポイントが進呈されます。 進呈されたポイントは「ポールトゥウィンホールディングス・デジタル優",
     "status": "watch",
     "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-10-28",
+    "code": "6630",
+    "company": "ヤーマン",
+    "total_yield_pct": 7.68,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "ヤーマン（6630） 配当＋優待利回り 7.68% / 配当利回り 1.17% / 確定月 12月末",
+    "benefit_content": "自社直営店及び公式通販サイトで利用できる株主優待割引券を、100株で5000円分、500株以上で1万4000円分。長期保有優遇制度あり",
+    "status": "watch",
+    "source": "diamond.jp/zai",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-10-28",
+    "code": "6533",
+    "company": "Orchestra Holdings",
+    "total_yield_pct": 6.92,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "Orchestra Holdings（6533） 配当＋優待利回り 6.92% / 配当利回り 1.34% / 確定月 12月末",
+    "benefit_content": "200株以上で通常優待1万5000円分＋上場10周年記念優待1万円分のデジタルギフト（記念優待は今回限り）。長期保有優遇制度あり。今回から株主優待内容を拡充",
+    "status": "watch",
+    "source": "diamond.jp/zai",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-10-28",
+    "code": "9160",
+    "company": "オンザページ",
+    "total_yield_pct": 6.19,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "オンザページ（9160） 配当＋優待利回り 6.19% / 配当利回り ― / 確定月 12月末",
+    "benefit_content": "100株で2000円相当の特選ギフト（焼き菓子など）、500株で3500円相当、1000株で5000円相当、5000株で1万円相当、1万株以上で2万円相当のWeb型カタログギフト。他に、保有株数に応じて自社運営レストラン優待券。長期保有優遇制度あり。合併により「ノバレーゼ」から社",
+    "status": "watch",
+    "source": "diamond.jp/zai",
     "holding_status": ""
   }
 ]
