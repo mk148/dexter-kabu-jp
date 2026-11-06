@@ -2026,5 +2026,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-11-06",
+    "code": "8783",
+    "company": "8月優待 abc",
+    "total_yield_pct": 285.0,
+    "source_title": "【利回り285％】株主優待到着",
+    "source_url": "https://kasumichan.com/2026/11/06/abc-2/",
+    "matched_text": "【利回り285％】株主優待到着",
+    "benefit_content": "1,501株以上 1株あたり10ポイント 長期優遇制度 継続保有期間に応じて進呈ポイントが 最大2倍 になります",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
