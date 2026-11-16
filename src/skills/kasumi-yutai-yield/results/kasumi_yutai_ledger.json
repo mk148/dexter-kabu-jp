@@ -2074,7 +2074,7 @@
     "source_title": "【増配】配当利回り5.9％にアップした銘柄",
     "source_url": "https://kasumichan.com/2026/11/08/suzuden-2/",
     "matched_text": "【増配】配当利回り5.9％にアップした銘柄",
-    "benefit_content": "QUOカードがもらえます 2026.11.10 【12月優待】株主優待廃止です 2026.10.23 株主優待廃止【11月6日】 2026.11.06 2026.11.12 かすみちゃん",
+    "benefit_content": "QUOカードがもらえます 2026.11.10 【12月優待】株主優待廃止です 2026.10.23 【利回り10.9％】デジタルギフト株主優待銘柄 2026.11.11 かすみちゃん",
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
@@ -2101,6 +2101,19 @@
     "source_url": "https://kasumichan.com/2026/11/12/wiltec-2/",
     "matched_text": "【優待拡充】ウイルテック利回り6.1％ QUOカードがもらえます",
     "benefit_content": "kids smile QUOカード（年2回） 【注目！初回2027年3月末は保有期間の条件なし】 2027年3月末を基準日とする初回の株主優待については、継続保有期間の条件はありません。半年以上保有していなくても、基準日時点で対象株数を保有していれば優待を受け取れます。 保有株式",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-11-16",
+    "code": "7782",
+    "company": "シンシア",
+    "total_yield_pct": 5.6,
+    "source_title": "【利回り5.6％】デジタルギフトがもらえる特別優待実施",
+    "source_url": "https://kasumichan.com/2026/11/16/sincere-2/",
+    "matched_text": "【利回り5.6％】デジタルギフトがもらえる特別優待実施",
+    "benefit_content": "100株以上 を保有する株主を対象に、保有株数に応じて デジタルギフト（1,000円～2,000円分） と、自社ブランド商品の割引券が追加贈呈されます",
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
