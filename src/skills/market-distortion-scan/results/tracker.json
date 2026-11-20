@@ -3767,5 +3767,29 @@
       "reason": "前年同期比 純利益+96.0%",
       "tdnet_url": "140120260806513067.pdf"
     }
+  },
+  {
+    "id": 135,
+    "date": "2026-11-20",
+    "event_date": null,
+    "signal": "C",
+    "code": "5078",
+    "company": "セレコーポレーション",
+    "price_at_signal": 4280.0,
+    "buy_thesis": "",
+    "exit_condition": "",
+    "returns": {},
+    "title": "自己株式の取得及び自己株式立会外買付取引(ToSTNeT-3)による自己株式の買付けに関するお知らせ",
+    "reason": "自社株買い取得決議",
+    "financials": {
+      "name": "セレコーポレーション",
+      "price": 4280.0,
+      "per": 10.8,
+      "pbr": 0.7,
+      "dividend_yield_pct": 3.64,
+      "mktcap": 15300,
+      "roe": 8.44,
+      "fcf": 1637.0
+    }
   }
 ]

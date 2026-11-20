@@ -2143,5 +2143,31 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-11-20",
+    "code": "3083",
+    "company": "スターシーズ",
+    "total_yield_pct": 15.0,
+    "source_title": "【総合利回り15％超】QUOカード年間6万円もらえます",
+    "source_url": "https://kasumichan.com/2026/11/20/star-seeds/",
+    "matched_text": "【総合利回り15％超】QUOカード年間6万円もらえます",
+    "benefit_content": "や制度開始時期に変更はありませんが、初回の対象となるためのスケジュールが変更されているため注意が必要です。 📌 今回の変更ポイントまとめ 優待内容： 500株以上でQUOカード30,000円分×年2回（ 年間60,000円分 ） 初回確認日の変更： 2026年11月末 → 202",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-11-20",
+    "code": "6099",
+    "company": "エラン",
+    "total_yield_pct": 5.5,
+    "source_title": "【利回り5.5％】株主優待拡充",
+    "source_url": "https://kasumichan.com/2026/11/20/fj-next-hd/",
+    "matched_text": "【利回り5.5％】株主優待拡充",
+    "benefit_content": "3,000株以上5,000株未満の区分も設けられます",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
