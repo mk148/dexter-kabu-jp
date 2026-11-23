@@ -2182,5 +2182,18 @@
     "status": "watch",
     "source": "kasumichan.com",
     "holding_status": ""
+  },
+  {
+    "date": "2026-11-23",
+    "code": "8935",
+    "company": "FJネクストホールディングス",
+    "total_yield_pct": 5.7,
+    "source_title": "【利回り5.7%】株主優待拡充",
+    "source_url": "https://kasumichan.com/2026/11/23/fj-next-holdings/",
+    "matched_text": "【利回り5.7%】株主優待拡充",
+    "benefit_content": "10,000株以上 6万円 10万円 1,000株以上を3年以上継続保有すると、5,000円相当のデジタルギフトが追加されます",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
