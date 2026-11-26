@@ -1983,7 +1983,7 @@
     "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
     "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
     "matched_text": "Orchestra Holdings（6533） 配当＋優待利回り 6.92% / 配当利回り 1.34% / 確定月 12月末",
-    "benefit_content": "200株以上で通常優待1万5000円分＋上場10周年記念優待1万円分のデジタルギフト（記念優待は今回限り）。長期保有優遇制度あり。今回から株主優待内容を拡充",
+    "benefit_content": "200株以上で通常優待1万5000円分＋上場10周年記念優待2万円分のデジタルギフト（記念優待は今回限り）。長期保有優遇制度あり。今回から株主優待内容を拡充",
     "status": "watch",
     "source": "diamond.jp/zai",
     "holding_status": ""
@@ -2220,6 +2220,45 @@
     "benefit_content": "100株以上 500円相当 300株以上 4,500円相当 500株以上 5,000円相当 1,000株以上 6,000円相当 ※100株以上300株未満は3年以上継続保有で1,500円相当に増額されます",
     "status": "watch",
     "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-11-26",
+    "code": "3242",
+    "company": "アーバネットコーポレーション",
+    "total_yield_pct": 6.4,
+    "source_title": "【利回り6.4%】株主優待改悪",
+    "source_url": "https://kasumichan.com/2026/11/26/urbanet/",
+    "matched_text": "【利回り6.4%】株主優待改悪",
+    "benefit_content": "500株以上〜1,000株未満 ：2,500円分（年2回／計5,000円分） 1,000株以上 ：5,000円分（年2回／計10,000円分） ※デジタルギフトはPayPayマネーライト、Amazonギフトカード、dポイント、QUOカードPayなどから選択可能です",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-11-26",
+    "code": "3454",
+    "company": "ファーストブラザーズ",
+    "total_yield_pct": 6.1,
+    "source_title": "【利回り6.1％】株主優待拡充",
+    "source_url": "https://kasumichan.com/2026/11/26/firstbrothers/",
+    "matched_text": "【利回り6.1％】株主優待拡充",
+    "benefit_content": "400株以上に引き下げられました",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
+  },
+  {
+    "date": "2026-11-26",
+    "code": "3415",
+    "company": "TOKYO BASE",
+    "total_yield_pct": 8.65,
+    "source_title": "ザイ・オンライン 株主優待おすすめ情報[2026年]",
+    "source_url": "https://diamond.jp/zai/category/kabunushiyutai",
+    "matched_text": "TOKYO BASE（3415） 配当＋優待利回り 8.65% / 配当利回り 2.24% / 確定月 1月末",
+    "benefit_content": "自社店舗または自社オンラインストアで利用可能な株主優待券（割引券）を、100株で2000円分、1000株で8000円分、5000株以上で1万5000円分。長期保有優遇制度あり",
+    "status": "watch",
+    "source": "diamond.jp/zai",
     "holding_status": ""
   }
 ]
