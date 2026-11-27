@@ -2260,5 +2260,18 @@
     "status": "watch",
     "source": "diamond.jp/zai",
     "holding_status": ""
+  },
+  {
+    "date": "2026-11-27",
+    "code": "7689",
+    "company": "コパ・コーポレーション",
+    "total_yield_pct": 9.6,
+    "source_title": "【利回り9.6％】株主優待新設",
+    "source_url": "https://kasumichan.com/2026/11/27/copa-corporation/",
+    "matched_text": "【利回り9.6％】株主優待新設",
+    "benefit_content": "QUOカードPay 9,000円分 必要株数 300株以上 権利確定月 2月末 初回基準日 2027年2月28日 継続保有要件 初回（2027年2月末）： なし 2回目以降（2028年2月末〜）： 1年以上継続保有 （同一株主番号で300株以上） 今回の優待で特に注目したいのは、",
+    "status": "watch",
+    "source": "kasumichan.com",
+    "holding_status": ""
   }
 ]
